@@ -1,3 +1,7 @@
+variable "region" {
+  description = "A region for the VPC"
+}
+
 variable "create_vpc" {
   description = "Controls if VPC should be created (it affects almost all resources)"
   default     = true

@@ -20,6 +20,48 @@ These types of resources are supported:
 * [DHCP Options Set](https://www.terraform.io/docs/providers/aws/r/vpc_dhcp_options.html)
 * [Default VPC](https://www.terraform.io/docs/providers/aws/r/default_vpc.html)
 
+### Installing
+
+Install AWS Command Line Interface. See the installing guide [Installing the AWS Command Line Interface \- AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)
+
+Install tfenv
+
+```
+brew install tfenv
+```
+
+Install Terraform
+
+```
+tfenv install
+```
+
+Set env for decrypting *.secret.tfvars.enc files
+
+```
+export SECRET_KEY=xxxx
+```
+
+## Getting Started
+
+Initializing
+
+```
+make init
+```
+
+Running the tests
+
+```
+make plan [env=development]
+```
+
+Deployment
+
+```
+make apply [env=development]
+```
+
 ## Usage
 
 ```hcl
